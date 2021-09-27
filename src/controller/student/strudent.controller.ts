@@ -6,4 +6,9 @@ export class StudentController {
   getStudents() {
     return 'All students';
   }
+
+  @Get('/:studentId')
+  getStudentById() {
+    return 'Get Student By Id';
+  }
 }
